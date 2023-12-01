@@ -324,7 +324,7 @@ class FixArmature(bpy.types.Operator):
         # Remove empty mmd object and unused objects
         Common.remove_empty()
         common_instance = Common.Common()
-common_instance.remove_unused_objects()
+        common_instance.remove_unused_objects()
 
         # Fix VRM meshes being outside of the armature
         if is_vrm:
